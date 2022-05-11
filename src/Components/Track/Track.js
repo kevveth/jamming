@@ -27,6 +27,10 @@ export default class Track extends React.Component {
     this.props.onRemove(track);
   }
 
+  search() {
+    this.props.onSearch(this.state.term);
+  }
+
   render() {
     return (
       <div className="Track">
